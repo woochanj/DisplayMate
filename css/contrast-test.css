@@ -1,11 +1,12 @@
-body, html {
-    margin: 0;
-    padding: 0;
+#contrast-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     background-color: #000;
-    font-family: 'Inter', sans-serif;
+    z-index: 9999;
+    /* High z-index to cover everything */
 }
 
 .contrast-container {
@@ -21,17 +22,17 @@ body, html {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    color: #f0f0f0; /* Default text color, might need adjustment for light bars */
+    color: #f0f0f0;
     font-size: 12px;
     padding-bottom: 10px;
     box-sizing: border-box;
 }
 
 .contrast-bar span {
-    mix-blend-mode: difference; /* Make text visible on any background */
+    mix-blend-mode: difference;
 }
 
-#instruction-overlay {
+#contrast-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -43,17 +44,18 @@ body, html {
     justify-content: center;
     align-items: center;
     color: white;
-    z-index: 100;
+    z-index: 10000;
+    /* Higher than layer */
     cursor: pointer;
     text-align: center;
 }
 
-#instruction-overlay h1 {
+#contrast-overlay h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-#instruction-overlay p {
+#contrast-overlay p {
     font-size: 1.2rem;
     color: #ccc;
 }

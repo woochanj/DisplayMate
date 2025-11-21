@@ -38,8 +38,8 @@
 
             <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                 <button class="primary-btn" onclick="startMonitorTest()">Dead Pixel Test</button>
-                <a href="contrast-test.html" class="primary-btn"
-                    style="text-decoration: none; background-color: #555;">Contrast Test</a>
+                <button class="primary-btn" onclick="startContrastTest()" style="background-color: #555;">Contrast
+                    Test</button>
             </div>
 
             <p style="margin-top: 30px; font-size: 13px; color: #ccc;">
@@ -118,13 +118,6 @@
         </div>
     </footer>
 
-
-
-
-
-
-
-
     <div id="result-modal" class="modal-overlay">
         <div class="modal-box">
             <div class="modal-title">Test Complete</div>
@@ -134,9 +127,19 @@
     </div>
 
     <div id="test-layer"></div>
+    <div id="contrast-layer" style="display: none;">
+        <div id="contrast-container" class="contrast-container"></div>
+        <div id="contrast-overlay">
+            <h1>Contrast Test</h1>
+            <p>Click anywhere to enter fullscreen.</p>
+            <p>Check if you can distinguish all gray levels.</p>
+            <p style="font-size: 0.9rem; margin-top: 20px;">(Click again or press ESC to exit)</p>
+        </div>
+    </div>
 
     <script src="js/app.js"></script>
     <script src="js/monitor.js"></script>
+    <script src="js/contrast-test.js"></script>
     <script src="js/keyboard.js"></script>
     <script src="js/reaction.js"></script>
     <script src="js/footer.js"></script>
