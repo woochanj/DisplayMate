@@ -1,0 +1,39 @@
+/* --- 2. Header (Glassmorphism) --- */
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 100;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-sub);
+}
+
+.nav-item { transition: 0.2s; }
+.nav-item:hover { color: var(--accent-color); }
+.nav-item.active { color: var(--text-main); font-weight: 600; }
+
+@media (max-width: 768px) {
+    .header { padding: 0 16px; }
+    .nav-menu { gap: 16px; font-size: 13px; }
+}
+

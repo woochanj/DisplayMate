@@ -1,0 +1,20 @@
+/* --- 4. Keyboard Test UI --- */
+.key-display-area { margin-bottom: 40px; min-height: 100px; }
+.current-key {
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    height: 72px;
+}
+.key-code { font-family: 'Courier New', monospace; color: var(--text-sub); font-size: 14px; }
+.key-history {
+    display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+    max-width: 500px; margin: 0 auto;
+}
+.history-chip {
+    padding: 8px 12px; background: var(--bg-ad); border-radius: 8px;
+    font-size: 13px; color: var(--text-main); font-weight: 500;
+    animation: popIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+

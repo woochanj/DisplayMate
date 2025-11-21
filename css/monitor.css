@@ -1,0 +1,27 @@
+/* --- 6. Modal --- */
+.modal-overlay {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); backdrop-filter: blur(8px);
+    z-index: 10000; align-items: center; justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+.modal-box {
+    background: white; width: 85%; max-width: 320px; padding: 30px 24px;
+    border-radius: 24px; text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2); transform: scale(0.95);
+    animation: popUp 0.3s forwards;
+}
+.modal-title { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+.modal-desc { font-size: 15px; color: var(--text-sub); margin-bottom: 24px; line-height: 1.5; }
+.modal-btn {
+    width: 100%; background-color: var(--accent-color); color: white;
+    border: none; padding: 14px; font-size: 16px; font-weight: 600;
+    border-radius: 14px; cursor: pointer;
+}
+
+/* --- 7. Fullscreen Layer --- */
+#test-layer {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 9999; cursor: none;
+}
+

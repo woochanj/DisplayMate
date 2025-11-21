@@ -1,0 +1,80 @@
+/* css/footer.css */
+
+.info-wrapper {
+    width: 100%;
+    /* 배경색을 본문과 아주 살짝만 다르게 (거의 차이 없게) */
+    background-color: #fafafa; 
+    border-top: 1px solid #eaeaea; /* 아주 연한 경계선 */
+    padding: 60px 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.info-content {
+    width: 100%;
+    max-width: 980px; /* 양옆으로 나눌 거라 폭을 좀 더 넓게 */
+    text-align: left;
+}
+
+/* 1. 핵심: 내용을 좌우 2개로 나누는 그리드 레이아웃 */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 1:1 비율로 나눔 */
+    gap: 60px; /* 좌우 간격 넉넉하게 */
+    margin-bottom: 40px;
+}
+
+/* 2. 제목은 작고 단단하게 (소제목 스타일) */
+.footer-column h2 {
+    font-size: 13px; /* 확 줄임 */
+    font-weight: 600;
+    color: #424245; /* 진한 회색 */
+    text-transform: uppercase; /* 영문 대문자로 변환해 깔끔함 강조 */
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+/* 3. 본문은 연하게 (읽히긴 하지만 눈에 안 띄게) */
+.footer-column p {
+    font-size: 12px; /* 아주 작은 글씨 */
+    line-height: 1.6;
+    color: #86868b; /* 연한 회색 */
+    margin-bottom: 16px;
+    text-align: justify; /* 양쪽 정렬 */
+}
+
+.footer-column ul {
+    padding-left: 16px;
+    margin: 0;
+}
+.footer-column li {
+    font-size: 12px;
+    color: #86868b;
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+/* 구분선 */
+.divider {
+    border: 0;
+    border-top: 1px solid #eaeaea;
+    margin: 0 0 20px 0;
+}
+
+/* 저작권 표시 */
+.copyright {
+    font-size: 11px;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 📱 모바일에서는 다시 1줄로 (반응형) */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr; /* 1단으로 변경 */
+        gap: 30px;
+    }
+}
