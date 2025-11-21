@@ -12,6 +12,14 @@
     -webkit-backdrop-filter: blur(20px);
     z-index: 100;
     border-bottom: 1px solid rgba(0,0,0,0.05);
+    /* 👇 [추가] 부드러운 움직임을 위한 설정 */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 👇 [추가] 이 클래스가 붙으면 헤더가 위로 숨습니다 */
+.header-hidden {
+    transform: translateY(-100%); /* 자기 높이만큼 위로 이동 */
+    box-shadow: none; /* 숨을 땐 그림자도 제거 */
 }
 
 .logo {

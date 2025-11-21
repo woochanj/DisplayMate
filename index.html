@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Free online tools for Dead Pixel Test, Keyboard Input Test, and Reaction Time Test. Check your hardware and reflexes now.">
-    <meta name="keywords" content="dead pixel test, monitor check, keyboard test, key rollover test, reaction time test, reflex test, online tools">
+    <meta name="description"
+        content="Free online tools for Dead Pixel Test, Keyboard Input Test, and Reaction Time Test. Check your hardware and reflexes now.">
+    <meta name="keywords"
+        content="dead pixel test, monitor check, keyboard test, key rollover test, reaction time test, reflex test, online tools">
     <title>DisplayTools | Monitor, Keyboard & Reaction Test</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
@@ -13,6 +16,7 @@
     <link rel="stylesheet" href="css/reaction.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
 
     <header class="header">
@@ -25,15 +29,19 @@
     </header>
 
     <div class="main-wrapper">
-        
+
         <section id="section-monitor" class="content-section active-section">
             <h1>Display Test</h1>
             <p class="subtitle">Check for dead pixels and backlight bleeding<br>on your screen.</p>
 
             <div class="ad-slot"></div>
 
-            <button class="primary-btn" onclick="startMonitorTest()">Start Test</button>
-            
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <button class="primary-btn" onclick="startMonitorTest()">Dead Pixel Test</button>
+                <a href="contrast-test.html" class="primary-btn"
+                    style="text-decoration: none; background-color: #555;">Contrast Test</a>
+            </div>
+
             <p style="margin-top: 30px; font-size: 13px; color: #ccc;">
                 Enters fullscreen mode. Tap to change colors.
             </p>
@@ -66,55 +74,56 @@
             </div>
         </section>
 
-        </div>
+    </div>
 
-        <footer class="info-wrapper">
-            <div class="info-content">
-                
-                <div class="footer-grid">
-                    
-                    <div class="footer-column">
-                        <h2>Display Technology</h2>
-                        <p>
-                            Understanding display defects is crucial for hardware maintenance. 
-                            "Dead Pixels" are black spots resulting from power failure to a pixel, 
-                            while "Stuck Pixels" are frozen in Red, Green, or Blue. 
-                            Our tool uses high-contrast cycling to help identify and potentially revive stuck liquid crystals.
-                        </p>
-                        <p>
-                            Regular testing prevents eye strain caused by backlight bleeding 
-                            and ensures your monitor operates at peak performance.
-                        </p>
-                    </div>
-        
-                    <div class="footer-column">
-                        <h2>Input & Reflex Specs</h2>
-                        <p>
-                            <strong>N-Key Rollover (NKRO)</strong> is essential for gaming. 
-                            It ensures every keystroke is registered even when multiple keys are pressed simultaneously.
-                            Ghosting occurs when signal conflicts cause unregistered inputs.
-                        </p>
-                        <h2>Reaction Benchmarks</h2>
-                        <ul>
-                            <li>Pro Gamers: 150ms - 200ms</li>
-                            <li>Average User: 215ms - 280ms</li>
-                        </ul>
-                    </div>
+    <footer class="info-wrapper">
+        <div class="info-content">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h2>Display Technology</h2>
+                    <p>
+                        Understanding display defects is crucial for hardware maintenance.
+                        "Dead Pixels" are black spots resulting from power failure to a pixel,
+                        while "Stuck Pixels" are frozen in Red, Green, or Blue.
+                        Our tool uses high-contrast cycling to help identify and potentially revive stuck liquid
+                        crystals.
+                    </p>
+                    <p>
+                        Regular testing prevents eye strain caused by backlight bleeding
+                        and ensures your monitor operates at peak performance.
+                    </p>
                 </div>
-        
-                <hr class="divider">
-                <p class="copyright">
-                    © 2025 DisplayTools. Optimized for Chrome, Safari & Edge.
-                </p>
+
+                <div class="footer-column">
+                    <h2>Input & Reflex Specs</h2>
+                    <p>
+                        <strong>N-Key Rollover (NKRO)</strong> is essential for gaming.
+                        It ensures every keystroke is registered even when multiple keys are pressed simultaneously.
+                        Ghosting occurs when signal conflicts cause unregistered inputs.
+                    </p>
+                    <h2>Reaction Benchmarks</h2>
+                    <ul>
+                        <li>Pro Gamers: 150ms - 200ms</li>
+                        <li>Average User: 215ms - 280ms</li>
+                    </ul>
+                </div>
             </div>
-        </footer>
 
-      
+            <hr class="divider">
+            <p class="copyright">
+                © 2025 DisplayTools. Optimized for Chrome, Safari & Edge.
+            </p>
+        </div>
+    </footer>
 
 
 
 
- 
+
+
+
 
     <div id="result-modal" class="modal-overlay">
         <div class="modal-box">
@@ -132,4 +141,5 @@
     <script src="js/reaction.js"></script>
     <script src="js/footer.js"></script>
 </body>
+
 </html>
